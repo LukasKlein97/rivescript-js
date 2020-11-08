@@ -61,8 +61,8 @@ RiveScript-js.
 
 ## Lukas JS Beispiel
 
-- npm install rivescript
-- riveshell ~/eg/brain
+- npm install -g rivescript
+- riveshell eg/brain
 - wird chat.rive genommen
 - JS Code innerhalb eines objects -> Input des Bots wird im JS Code weiterverarbeitet und return kann von Chat Bot in antwort aufgenommen werden -> siehe Additions Beispiel
 - ABER: kein plan wie man Rest Call innerhalb des js objektes realisiert -> angeblich https://github.com/aichaos/rivescript-js/issues/263
