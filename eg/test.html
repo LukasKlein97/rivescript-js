@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>XML http request</title>
+		<script>
+			async function getCases() {
+				var answer;
+				let response = await fetch(
+					"https://api.covid19api.com/live/country/germany"
+				);
+				let data = await response.json();
+
+				console.log(data);
+
+				var lastItem = data.pop();
+				console.log(lastItem);
+
+				return lastItem.Active;
+			}
+
+			console.log(getCases());
+		</script>
+	</head>
+
+	<body></body>
+</html>
